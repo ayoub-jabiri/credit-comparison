@@ -1,4 +1,6 @@
 import "./App.css";
+import AppHeader from "./components/layout/AppHeader";
+
 import { data } from "./assets/data/data";
 
 function App() {
@@ -6,7 +8,7 @@ function App() {
 
     return (
         <>
-            <h1>Hello Wolrd!</h1>
+            <AppHeader />
         </>
     );
 }
