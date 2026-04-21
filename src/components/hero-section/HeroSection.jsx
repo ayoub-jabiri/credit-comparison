@@ -1,5 +1,5 @@
 import CreditCard from "./CreditCard";
-import { data } from "../../assets/data/data";
+import data from "../../assets/data/data";
 
 export default function HeroSection() {
     const dataList = data.map((el) => (
@@ -9,6 +9,7 @@ export default function HeroSection() {
             name={el.name}
             rising={el.rising}
             interestRate={el.interest_rate}
+            isRecomended={el.isRecomended}
         />
     ));
     return (

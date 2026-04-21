@@ -1,4 +1,4 @@
-export const data = [
+const data = [
     {
         id: 1,
         name: "Eagle Standard Bank",
@@ -8,6 +8,7 @@ export const data = [
         monthly_payment: 1231.43,
         total_cost: 443314.8,
         color: "#1f77b4",
+        isRecomended: false,
     },
     {
         id: 2,
@@ -18,6 +19,7 @@ export const data = [
         monthly_payment: 1660.82,
         total_cost: 298947.6,
         color: "#ff7f0e",
+        isRecomended: false,
     },
     {
         id: 3,
@@ -28,6 +30,7 @@ export const data = [
         monthly_payment: 2170.37,
         total_cost: 260444.4,
         color: "#2ca02c",
+        isRecomended: false,
     },
     {
         id: 4,
@@ -38,6 +41,7 @@ export const data = [
         monthly_payment: 1310.59,
         total_cost: 471812.4,
         color: "#d62728",
+        isRecomended: false,
     },
     {
         id: 5,
@@ -48,6 +52,7 @@ export const data = [
         monthly_payment: 1444.24,
         total_cost: 346617.6,
         color: "#9467bd",
+        isRecomended: false,
     },
     {
         id: 6,
@@ -58,6 +63,7 @@ export const data = [
         monthly_payment: 1682.02,
         total_cost: 302763.6,
         color: "#8c564b",
+        isRecomended: false,
     },
     {
         id: 7,
@@ -68,6 +74,7 @@ export const data = [
         monthly_payment: 1250.91,
         total_cost: 450327.6,
         color: "#e377c2",
+        isRecomended: false,
     },
     {
         id: 8,
@@ -78,6 +85,7 @@ export const data = [
         monthly_payment: 1295.34,
         total_cost: 388602.0,
         color: "#7f7f7f",
+        isRecomended: false,
     },
     {
         id: 9,
@@ -88,6 +96,7 @@ export const data = [
         monthly_payment: 1568.51,
         total_cost: 376442.4,
         color: "#bcbd22",
+        isRecomended: false,
     },
     {
         id: 10,
@@ -98,5 +107,16 @@ export const data = [
         monthly_payment: 2199.83,
         total_cost: 263979.6,
         color: "#17becf",
+        isRecomended: false,
     },
 ];
+
+const minRate = Math.min(...data.map((el) => el.interest_rate));
+
+data.forEach((el) => {
+    if (el.interest_rate == minRate) {
+        el.isRecomended = true;
+    }
+});
+
+export default data;
