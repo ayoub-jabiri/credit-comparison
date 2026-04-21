@@ -1,14 +1,12 @@
 import "./App.css";
 import AppHeader from "./components/layout/AppHeader";
-
-import { data } from "./assets/data/data";
+import HeroSection from "./components/hero-section/HeroSection";
 
 function App() {
-    console.log(data);
-
     return (
         <>
             <AppHeader />
+            <HeroSection />
         </>
     );
 }
