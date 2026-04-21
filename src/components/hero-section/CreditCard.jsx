@@ -12,7 +12,7 @@ export default function CreditCard({
                 style={{ backgroundColor: color }}
             >
                 <h3 className="text-white text-xl">{name}</h3>
-                <div className="flex justify-between items-center text-[#ddd] text-sm">
+                <div className="flex justify-between items-center text-[#ddd] text-sm pb-2 border-b">
                     <h4>Rising: {rising}</h4>
                     <h4>Interest Rate: {interestRate}</h4>
                 </div>
