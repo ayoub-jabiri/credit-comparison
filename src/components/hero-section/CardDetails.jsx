@@ -1,4 +1,5 @@
 import { RiCloseLine } from "@remixicon/react";
+import CompoundInterest from "./CompoundInterest";
 
 export default function CardDetails({ card }) {
     function closeCardDetails() {
@@ -17,8 +18,8 @@ export default function CardDetails({ card }) {
                 <h5 className="text-xl text-center pb-2 mb-4 border-b border-[#ddd]">
                     {card.name}
                 </h5>
-                <section>
-                    <h6 className="mb-2">Credit Details: </h6>
+                <section className="mb-4">
+                    <h6 className="font-bold mb-2">Credit Details:</h6>
                     <div className="flex justify-center gap-5">
                         <div>
                             <p>Duration</p>
@@ -46,6 +47,10 @@ export default function CardDetails({ card }) {
                             </p>
                         </div>
                     </div>
+                </section>
+                <section>
+                    <h6 className="font-bold mb-2">Compound Interest:</h6>
+                    <CompoundInterest card={card} />
                 </section>
             </div>
         </div>

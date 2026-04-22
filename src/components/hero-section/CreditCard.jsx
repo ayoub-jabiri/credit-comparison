@@ -13,7 +13,7 @@ export default function CreditCard({ card }) {
             >
                 <h3 className="text-white text-xl">{card.name}</h3>
                 <div className="flex justify-between items-center text-[#ddd] text-sm pb-2 border-b">
-                    <h4>Rising: {card.rising}</h4>
+                    <h4>Initial Amount: {card.initialAmount}</h4>
                     <h4>Interest Rate: {card.interest_rate}</h4>
                 </div>
                 {card.isRecomended ? (

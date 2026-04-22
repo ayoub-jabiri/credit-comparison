@@ -2,7 +2,7 @@ const data = [
     {
         id: 1,
         name: "Eagle Standard Bank",
-        rising: 4.7,
+        initialAmount: 1000,
         interest_rate: 6.25,
         duration: 30,
         monthly_payment: 1231.43,
@@ -13,7 +13,7 @@ const data = [
     {
         id: 2,
         name: "Swift Finance Co.",
-        rising: 4.1,
+        initialAmount: 3000,
         interest_rate: 5.75,
         duration: 15,
         monthly_payment: 1660.82,
@@ -24,7 +24,7 @@ const data = [
     {
         id: 3,
         name: "Blue Harbor Credit",
-        rising: 4.9,
+        initialAmount: 2500,
         interest_rate: 5.5,
         duration: 10,
         monthly_payment: 2170.37,
@@ -35,7 +35,7 @@ const data = [
     {
         id: 4,
         name: "NorthStar Lending",
-        rising: 3.8,
+        initialAmount: 7000,
         interest_rate: 6.85,
         duration: 30,
         monthly_payment: 1310.59,
@@ -46,7 +46,7 @@ const data = [
     {
         id: 5,
         name: "Evergreen Bancorp",
-        rising: 4.3,
+        initialAmount: 1500,
         interest_rate: 6.1,
         duration: 20,
         monthly_payment: 1444.24,
@@ -57,7 +57,7 @@ const data = [
     {
         id: 6,
         name: "Titan Mutual",
-        rising: 4.5,
+        initialAmount: 4000,
         interest_rate: 5.95,
         duration: 15,
         monthly_payment: 1682.02,
@@ -68,7 +68,7 @@ const data = [
     {
         id: 7,
         name: "Pinnacle Trust",
-        rising: 4.0,
+        initialAmount: 5000,
         interest_rate: 6.4,
         duration: 30,
         monthly_payment: 1250.91,
@@ -79,7 +79,7 @@ const data = [
     {
         id: 8,
         name: "Atlas Global Bank",
-        rising: 4.6,
+        initialAmount: 4000,
         interest_rate: 6.05,
         duration: 25,
         monthly_payment: 1295.34,
@@ -90,7 +90,7 @@ const data = [
     {
         id: 9,
         name: "Summit Peak Credit",
-        rising: 3.9,
+        initialAmount: 3500,
         interest_rate: 7.15,
         duration: 20,
         monthly_payment: 1568.51,
@@ -101,7 +101,7 @@ const data = [
     {
         id: 10,
         name: "Velocity Finacial",
-        rising: 4.2,
+        initialAmount: 1300,
         interest_rate: 5.8,
         duration: 10,
         monthly_payment: 2199.83,
