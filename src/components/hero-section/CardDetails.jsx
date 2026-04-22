@@ -7,41 +7,44 @@ export default function CardDetails({ card }) {
     return (
         <div
             id={`card-${card.id}-details`}
-            className="fixed left-full top-0 bg-[#00000026] w-full h-full z-10 transition-[left]"
+            className="fixed left-full top-0 w-full h-full z-10 transition-[left]"
         >
-            <div className="bg-white w-[50%] h-full p-10 absolute right-0">
+            <div className="absolute right-0 bg-white w-[50%] h-full p-10 border-l border-[#ddd]">
                 <RiCloseLine
                     onClick={closeCardDetails}
                     className="absolute top-4 left-4 text-xl cursor-pointer"
                 />
-                <h5 className="text-xl text-center mb-6">
-                    {card.name} Details
+                <h5 className="text-xl text-center pb-2 mb-4 border-b border-[#ddd]">
+                    {card.name}
                 </h5>
-                <section className="flex justify-center gap-5">
-                    <div>
-                        <h6>Duration</h6>
-                        <h6>Monthly Payment</h6>
-                        <h6>Total Cost</h6>
-                    </div>
-                    <div>
-                        <p>
-                            :
-                            <span className="text-[#2196F3] font-bold">
-                                {" " + card.duration}
-                            </span>
-                        </p>
-                        <p>
-                            :
-                            <span className="text-[#2196F3] font-bold">
-                                {" " + card.monthly_payment}
-                            </span>
-                        </p>
-                        <p>
-                            :
-                            <span className="text-[#2196F3] font-bold">
-                                {" " + card.total_cost}
-                            </span>
-                        </p>
+                <section>
+                    <h6 className="mb-2">Credit Details: </h6>
+                    <div className="flex justify-center gap-5">
+                        <div>
+                            <p>Duration</p>
+                            <p>Monthly Payment</p>
+                            <p>Total Cost</p>
+                        </div>
+                        <div>
+                            <p>
+                                :
+                                <span className="text-[#2196F3] font-bold">
+                                    {" " + card.duration}
+                                </span>
+                            </p>
+                            <p>
+                                :
+                                <span className="text-[#2196F3] font-bold">
+                                    {" " + card.monthly_payment}
+                                </span>
+                            </p>
+                            <p>
+                                :
+                                <span className="text-[#2196F3] font-bold">
+                                    {" " + card.total_cost}
+                                </span>
+                            </p>
+                        </div>
                     </div>
                 </section>
             </div>
