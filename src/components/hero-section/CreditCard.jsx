@@ -8,7 +8,7 @@ export default function CreditCard({ card }) {
     return (
         <div className="col-span-12 md:col-span-6 lg:col-span-4">
             <div
-                className="relative shadow-md h-42.5 p-4 rounded-md flex flex-col justify-between"
+                className="relative max-md:w-87.5 h-42.5 p-4 max-md:mx-auto shadow-md rounded-md flex flex-col justify-between"
                 style={{ backgroundColor: card.color }}
             >
                 <h3 className="text-white text-xl">{card.name}</h3>
