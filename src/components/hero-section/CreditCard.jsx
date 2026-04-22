@@ -6,7 +6,7 @@ export default function CreditCard({ card }) {
     }
 
     return (
-        <div className="col-span-4">
+        <div className="col-span-12 md:col-span-6 lg:col-span-4">
             <div
                 className="relative shadow-md h-42.5 p-4 rounded-md flex flex-col justify-between"
                 style={{ backgroundColor: card.color }}
