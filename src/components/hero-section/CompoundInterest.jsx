@@ -23,15 +23,15 @@ export default function CompoundInterest({ card }) {
     }
 
     return (
-        <table className="block text-center w-[400px] border border-[#D6D6D6]">
-            <thead className="block bg-[#F1F1F1] w-full p-2 border-b border-[#D6D6D6]">
-                <tr className="block">
+        <table className="block text-center border border-[#D6D6D6] overflow-auto">
+            <thead className="block w-full">
+                <tr className="block bg-[#F1F1F1] w-[400px] p-2 border-b border-[#D6D6D6]">
                     <th className="w-[50px]">Year</th>
                     <th className="w-[150px]">Current Interest</th>
                     <th className="w-[200px]">Total</th>
                 </tr>
             </thead>
-            <tbody className="block">{yearsList}</tbody>
+            <tbody className="block w-[400px]">{yearsList}</tbody>
         </table>
     );
 }

@@ -10,7 +10,7 @@ export default function CardDetails({ card }) {
             id={`card-${card.id}-details`}
             className="fixed left-full top-0 w-full h-full z-10 transition-[left]"
         >
-            <div className="absolute right-0 bg-white w-[50%] h-full p-10 border-l border-[#ddd]">
+            <div className="absolute right-0 bg-white max-md:w-[80%] md:w-[50%] h-full p-10 border-l border-[#ddd]">
                 <RiCloseLine
                     onClick={closeCardDetails}
                     className="absolute top-4 left-4 text-xl cursor-pointer"
