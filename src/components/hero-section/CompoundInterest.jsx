@@ -9,7 +9,7 @@ export default function CompoundInterest({ card }) {
 
     let currentInterest = card.interest_rate;
 
-    for (let i = 1; i < card.duration; i++) {
+    for (let i = 1; i <= card.duration; i++) {
         currentInterest *= i;
 
         yearsList.push(
